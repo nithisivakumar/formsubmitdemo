@@ -1,0 +1,95 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+
+	background: #f1f1f1;
+}
+
+}
+
+/* (B) RESPONSIVE IMAGE */
+.textover img { width: 100%; }
+.textover { max-width: 600px; } /* OPTIONAL */
+
+/* (C) POSITION CAPTION */
+.textover { position: relative; } /* REQUIRED */
+.textover figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* (D) CAPTION COSMETICS */
+.textover figcaption {
+  box-sizing: border-box;
+  width: 42%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body{
+
+  background: rgba(0,0,0,0.7)url(kalo.jpg);
+background-size: cover;
+background-blend-mode: darken;
+
+
+}
+h1{
+
+  color: white;
+  font-size: 45px;
+}
+
+h5{
+
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+h4{
+
+  color: white;
+  font-size: 25px;
+}
+
+/* for desktop */
+.whatsapp_float {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+        font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+   margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
