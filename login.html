@@ -10,21 +10,23 @@
 	<div class="loginbox">
 		<img src="avatar.jpg" class="avatar">
 		<h1>Login Here</h1>
-		<form action="https://formsubmit.co/3c2ecce5a00a6184fbf6ee777835b12c" method="post">
+		 <form action="https://formsubmit.co/3c2ecce5a00a6184fbf6ee777835b12c" method="post">
+
 			<!--honeypot-->
 			<input type="text" name="_honey" style="display: none;">
 			<!--disable Captcha-->
 			<input type="hidden" name="captcha" value="false">
 
+			
 			<input type="hidden" name="_next" value="https://nithisivakumar.github.io/formsubmitdemo/success.html">
 
 
 
 
 			<p>Username</p>
-			<input type="text" name="Username" placeholder="Enter Username" required>
+			<input type="text" name="Username" placeholder="Enter Username" id="name" required>
 			<p>Password</p>
-			<input type="password" name="Password" placeholder="Enter Password" required>
+			<input type="password" name="Password" placeholder="Enter Password" id="password" required>
 			<input type="submit" name="" value="Login">
 			<a href="#">Lost Your Account?</a> <br>
 			<a href="#"> Don't Have An Account?</a>
