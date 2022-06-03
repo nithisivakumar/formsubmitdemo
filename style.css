@@ -148,7 +148,13 @@ body{
 .fonu{
 
 	position: absolute;
-	left: 60%;
+	left: 70%;
+}
+
+.fontp{
+
+	position: absolute;
+	left: 70%;
 }
 
 .iou{
