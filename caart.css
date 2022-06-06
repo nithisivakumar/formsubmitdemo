@@ -120,3 +120,24 @@ body {
 }
 
 
+button{
+
+  height: 60px;
+  width: 190px;
+  margin: 0 35px;
+  border-radius: 50px;
+ border: none;
+ outline: none;
+ background: #111;
+ color: #fff;
+ font-size: 20px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ cursor: pointer;
+}
+button:hover{
+
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4, #f441a5, #ffeb3b);
+  background-size: 400%;
+}
+
