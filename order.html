@@ -18,35 +18,29 @@
 	<div class="loginbox">
 		<img src="dele.jpeg" class="avatar">
 		<h1>Details Here!</h1>
-		<form action="https://formsubmit.co/3c2ecce5a00a6184fbf6ee777835b12c" method="post">
+		<form action="https://sheetdb.io/api/v1/cifks9hom0fef" method="post" id="sheetdb-form">
 
-			<!--honeypot-->
-			<input type="text" name="_honey" style="display: none;">
-			<!--disable Captcha-->
-			<input type="hidden" name="captcha" value="false">
-
-			<input type="hidden" name="_next" value="https://nithisivakumar.github.io/formsubmitdemo/finish.html">
 
 			<p>username</p>
-			<input type="text" name=" Username" placeholder="Enter Username" required>
+			<input type="text" name="data[name]" placeholder="Enter Username" required>
 			<label for="username"></label>
 			<p>Address</p>
-			<input type="text" name="Adderss" placeholder="Enter Address" required>
+			<input type="text" name="data[place]" placeholder="Enter Address" required>
 			<label for="Address"></label>
 			<p>Mobile Number</p>
-			<input type="Number" name="Phone Number" placeholder="Enter number" required>
+			<input type="Number" name="data[Phone]" placeholder="Enter number" required>
 			<label for="mobile number"></label>
 			<p>Country&postcode</p>
-			<input type="text" name="Country or post code" placeholder="Enter Country&postcode" required>
+			<input type="text" name="data[country]" placeholder="Enter Country&postcode" required>
 			<label for="countryorpost"></label>
 			
-			<input type="text" name="W.C" placeholder="Entre Weight Name /Code" required>
+			<input type="text" name="data[wc]" placeholder="Entre Weight Code [or] Name " required>
 
 			<label for="weightcode">
 			</label>
 			
 			<h3>Cash On Dilevery</h3>
-			<input type="radio" name="C Payment">
+			<input type="radio" name="data[cpay]">
 			<br>
 			<br>
 
@@ -54,6 +48,24 @@
 		</form>
 	</div>
 	<a href="page.html"><button>Back Page</button></a>
+
+	 <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('finish.html', '_blank');
+
+          });
+        });
+        </script>
+        
 
 
 </head>
