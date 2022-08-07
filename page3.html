@@ -1,48 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>20KG TO 30KG</title>
-	<link rel="stylesheet" type="text/css" href="new.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>20KG TO more</title>
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <div class="textovers">
-    	<img src="dele.jpg" width="1540px" height="310px">
+       <img src="courier.jpg" width="1540px" height="310px">
     </div>
     <center>
-    	 <h1>20KG TO 30KG..</h1>
+         <h1>20KG TO More...</h1>
     </center>
     <h3>We are Offering You That Your First Parcel May Come Very Soon.</h3>
     <center>
-    <h3>Thus in This Page You can send(or)Receive The Products which are 20KG to more</h3>
+    <h3>Thus in This Page You may only send The Products which are 20KG to MoreKGs</h3>
 </center>
 <br>
-<h3>PLEASE COPY THE WEIGHT CODE!</h3>
-<br>
-<hr>
-<h2>Weight CODE: #BSS0DSN7</h2>
-<br>
-<hr>
-<h3>YOU WILL BE ASKING TO FILL THE DETAIL ABOUT PRODUCT FOR EXAMPLE; weight code.
-    AND YOU ARE BEEN ASKING YOUR DETAILS LIKE Address,postcode,city TO RECIVE OR PICKUP YOUR ORDER.   Thank You!</h3>
-    <h3>Thus we are only having the service of Cash on dilevery</h3>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <center>
-   <a href="login.html"><button>SET ORDER NOW</button></a>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br><br><br>
-   
-   <input type="button" name="" value="REMEMBERING YOU" onclick="alert ('PLEASE COPY THE WEIGHT CODE')">
+<div class="kg">
+    <form action="https://sheetdb.io/api/v1/cifks9hom0fef" method="post" id="sheetdb-form">
 
-    </center>
-   
-</head>
-<body>
+        
+         <label>Choose Weight</label>
+         <br>
+
+       
+         <select name="data[weight]" required/>
+            <option>20Kg</option>
+            <option>21Kg</option>
+            <option>22Kg</option>
+            <option>23Kg</option>
+            <option>24Kg</option>
+            <option>25Kg</option>
+            <option>26Kg</option>
+            <option>27Kg</option>
+            <option>28Kg</option>
+            <option>More Than 28KGs</option>
+        </select>
+
+ <p>Hi Buddy you will order your things here by easy steps.You can also contact us by whats app in this page.
+
+  
+       <div container> <label class="lab">Pickup Address🡻</label>
+       </div>
+        <input type="address" name="data[pickup]" placeholder="Pickup Address" required/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <div> <label class="cab">Delivery Address🡻</label>
+       </div>
+        <input type="address" name="data[deliver]" placeholder="Delivery Address" required/>
+
+        <label>Phone Number</label>
+        <input type="Number" name="data[phone]" placeholder="Enter Phone Number" required/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>User Name</label>
+        <input type="Name" name="data[User]" required />
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        <center>
+
+            <input type="submit" value="Order" onclick="alertsweet();">
+
+        </center>
+        
+        
+    </form>
+
+
+
+
+</div>
+
+
+    <a href="https://wa.me/919003530106" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+    <script>
+
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('details.html', '_blank');
+
+          });
+        });
+        </script>
+        
+
+
 
 </body>
 </html>

@@ -23,19 +23,20 @@ body{
 	border: none;
 	margin: 20px;
 	padding: 24px;
-	width: 220px;
+	width: 222px;
 	left: 55%;
 
 
 }
 .btn1{
+
 	background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
 }
 
 
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0 auto;
+	max-padding: 0;
 	box-sizing: border-box;
 }
 
@@ -45,7 +46,7 @@ html{
 
 section{
 
-	width: 100%;
+	max-width: 100%;
 	height: 100vh;
 	color: #fff;
 	background: linear-gradient(.45deg, #EE7752, #E73C7E, #23A6D5);
@@ -53,16 +54,17 @@ section{
 
 .container1{
 
-	position: absolute;
-	left: 75%;
-	text-align: right ;
+width: 27%;
+height: auto;
+
+
 }
 
 .container2{
 
-	position: absolute;
-	right: 71%;
-	text-align: left ;
+	width: 27%;
+height: auto;
+
 
 }
 
@@ -71,14 +73,14 @@ section{
 	position: absolute;
 	left: 95%;
 	text-align: center ;
-	width: 110px;
+	max-width: 110px;
 	height: 65px;
 }
 
 .btn3{
 
 	border: none;
-	margin: 10pxpx;
+	margin: 10pxpx auto;
 	padding: 12px;
 
 }
@@ -88,14 +90,11 @@ section{
 }
 
 
-button{
+.about{
 
-    position: absolute;
+	background-color: skyblue;
 	width: 110px;
 	height: 45px;
-	left: 90%;
-background: #eedfce;
-
 }
 
 
@@ -103,11 +102,12 @@ background: #eedfce;
 
 	position: absolute;
 	left: 35%;
+
 }
 
 body{
 
-	background-color: #E7DFD5;
+	background-color: white;
 }
 
 
@@ -145,34 +145,11 @@ body{
     }
 }
 
-.fonu{
+.htab{
 
-	position: absolute;
-	left: 70%;
+	width: 75px;
+	height: auto;
+
+
 }
-
-.fontp{
-
-	position: absolute;
-	left: 70%;
-}
-
-.iou{
-
-	position: absolute;
-	left: 80%;
-}
-.gui{
-
-	position: absolute;
-	left: 90%;
-}
-
-.fonu a:hover{
-
-	cursor: pointer;
-	background: #ffc107;
-	color: #000;
-}
-
 

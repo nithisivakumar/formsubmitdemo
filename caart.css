@@ -18,6 +18,7 @@ body {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   font-family: roboto;
   text-align: center;
+  height: auto;
   
 
   transition: 0.5s ease;
@@ -42,8 +43,10 @@ body {
 }
 .card-text p {
   color: grey;
-  font-size:15px;
-  font-weight: 300;
+  font-size:25px;
+  font-weight: 600;
+  height: auto;
+  font: inherit;
 }
 .card-text h2 {
   margin-top:0px;

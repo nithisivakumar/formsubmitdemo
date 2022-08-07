@@ -46,3 +46,79 @@ input[type=button]
         font-size: 22px;
     }
 }
+
+form select{
+
+   width: 25%;
+  padding: 7px;
+  border: none;
+  border: 3px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 22px;
+
+ 
+}
+body{
+  background-color: #E7DFD5;
+}
+
+form input {
+  width: 28%;
+  padding: 7px;
+  border: none;
+  border: 3px solid gray;
+  border-radius: 6px;
+  outline: none;
+
+}
+
+input[type="address"]{
+
+}
+
+.lab{
+
+
+  
+
+}
+
+
+
+input[type="submit"]{
+
+ width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background: #49c1a2;
+    color:  black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+
+    background: #98fb98;
+  }
+
+
+.kg input[type="radio"]{
+
+border: none;
+  outline: none;
+  height: 20px;
+  background: #fb2525;
+  color: black;
+  position: absolute;
+  top: 149%;
+  border-radius: 33px;
+}
+

@@ -18,35 +18,117 @@
     <h3>Thus in This Page You may only send The Products which are 1 to 10KGs</h3>
 </center>
 <br>
-<h3>PLEASE COPY THE WEIGHT CODE!</h3>
-<br>
-<hr>
-<h2>Weight CODE: #BDVNV5BDVNS</h2>
-<br>
-<hr>
-<h3>YOU WILL BE ASKING TO FILL THE DETAIL ABOUT PRODUCT FOR EXAMPLE; weight code.
-    AND YOU ARE BEEN ASKING YOUR DETAILS LIKE Address,postcode,city TO RECIVE OR PICKUP YOUR ORDER.   Thank You!</h3>
-    <h3>Thus we are only having the service of Cash on dilevery</h3>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <center>
-   <a href="login.html"><button>SET ORDER NOW</button></a>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br><br><br>
-   
-   <input type="button" name="" value="REMEMBERING YOU" onclick="alert ('PLEASE COPY THE WEIGHT CODE')">
+<div class="kg">
+    <form action="https://sheetdb.io/api/v1/cifks9hom0fef" method="post" id="sheetdb-form">
 
-    </center>
-   
-</head>
-<body>
+        
+         <label>Choose Weight</label>
+         <br>
 
-    <a href="https://wa.me/919003530106" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+       
+         <select name="data[weight]" required/>
+            <option>1Kg</option>
+            <option>2Kg</option>
+            <option>3Kg</option>
+            <option>4Kg</option>
+            <option>5Kg</option>
+            <option>6Kg</option>
+            <option>7Kg</option>
+            <option>8Kg</option>
+            <option>9Kg</option>
+            <option>10Kg</option>
+        </select>
+        <br>
+
+
+ <p>Hi Buddy you will order your things here by easy steps.You can also contact us by whats app in this page.
+
+  
+       <div container> <label class="lab">Pickup Address🡻</label>
+       </div>
+        <input type="address" name="data[pickup]" placeholder="Pickup Address"  required/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <div> <label class="cab">Delivery Address🡻</label>
+       </div>
+        <input type="address" name="data[deliver]" placeholder="Delivery Address"  required/>
+
+        <label>Phone Number</label>
+        <input type="Number" name="data[phone]" placeholder="Enter Phone Number" required/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>User Name</label>
+        <input type="Name" name="data[User]" id="name" required />
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        <center>
+
+            <input type="submit" value="Order"  />
+        </center>
+        
+        
+    </form>
+
+
+
+
+</div>
+
+<a href="https://wa.me/919360663897" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+
+
+
+    <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('details.html', '_blank');
+
+          });
+        });
+
+       
+
+
+
+    
+
+
+
+
+
+
+                    
+        </script>
+        
+
+
 
 </body>
 </html>

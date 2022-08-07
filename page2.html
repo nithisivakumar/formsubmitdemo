@@ -1,51 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>10KG TO 20KG</title>
-	<link rel="stylesheet" type="text/css" href="new.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>1KG TO 10KG</title>
+    <link rel="stylesheet" type="text/css" href="new.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <div class="textovers">
-    	<img src="lloj.jpg" width="1540px" height="310px">
+        <img src="lloj.jpg" width="1540px" height="310px">
     </div>
     <center>
-    	 <h1>10KG TO 20KG..</h1>
+         <h1>10KG TO 20KG..</h1>
     </center>
     <h3>We are Offering You That Your First Parcel May Come Very Soon.</h3>
     <center>
-    <h3>Thus in This Page You may only send(or)Receive The Products which are 10KG to 20KGs</h3>
+    <h3>Thus in This Page You may only send The Products which are 10 to 20KGs</h3>
 </center>
 <br>
-<h3>PLEASE COPY THE WEIGHT CODE!</h3>
-<br>
-<hr>
-<h2>Weight CODE: #BVSSDSN56</h2>
-<br>
-<hr>
-<h3>YOU WILL BE ASKING TO FILL THE DETAIL ABOUT PRODUCT FOR EXAMPLE; weight code.
-    AND YOU ARE BEEN ASKING YOUR DETAILS LIKE Address,postcode,city TO RECIVE OR PICKUP YOUR ORDER.   Thank You!</h3>
-    <h3>Thus we are only having the service of Cash on dilevery</h3>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <center>
-   <a href="login.html"><button>SET ORDER NOW</button></a>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br><br><br>
-   
-   <input type="button" name="" value="REMEMBERING YOU" onclick="alert ('PLEASE COPY THE WEIGHT CODE')">
+<div class="kg">
+    <form action="https://sheetdb.io/api/v1/cifks9hom0fef" method="post" id="sheetdb-form">
 
-    </center>
-   
-</head>
-<body>
+        
+         <label>Choose Weight</label>
+         <br>
 
-    <a href="https://wa.me/919003530106" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+       
+         <select name="data[weight]" required/>
+            <option>11Kg</option>
+            <option>12Kg</option>
+            <option>13Kg</option>
+            <option>14Kg</option>
+            <option>15Kg</option>
+            <option>16Kg</option>
+            <option>17Kg</option>
+            <option>18Kg</option>
+            <option>19Kg</option>
+            <option>20Kg</option>
+        </select>
+
+ <p>Hi Buddy you will order your things here by easy steps.You can also contact us by whats app in this page.
+
+ <center>
+       <label>Pickup Address🡻</label>
+  
+       <br>
+        <input type="address" name="data[pickup]" placeholder="Pickup Address" required/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <div> <label class="cab">Delivery Address🡻</label>
+       </div>
+        <input type="address" name="data[deliver]" placeholder="Delivery Address" required/>
+
+        <label>Phone Number</label>
+        <input type="Number" name="data[phone]" placeholder="Enter Phone Number" required/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <label>User Name</label>
+        <input type="Name" name="data[User]" required />
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        <center>
+
+            <input type="submit" value="Order">
+        </center>
+        
+        
+    </form>
+
+
+
+
+</div>
+
+
+    <a href="https://wa.me/919360663897" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+
+
+    <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('details.html', '_blank');
+
+          });
+        });
+        </script>
+        
+
 
 
 </body>
