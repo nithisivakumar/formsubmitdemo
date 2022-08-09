@@ -19,14 +19,18 @@
 </center>
 <br>
 <div class="kg">
-    <form action="https://sheetdb.io/api/v1/cifks9hom0fef" method="post" id="sheetdb-form">
+    <form action="https://formsubmit.co/bvscourier1@gmail.com" method="post">
+
+
+        <input type="hidden" name="_subject" value="NEW CUSTOMER ORDER">
+        <input type="hidden" name="_next" value="https://nithisivakumar.github.io/details.html">
 
         
          <label>Choose Weight</label>
          <br>
 
        
-         <select name="data[weight]" required/>
+         <select name="weight" required/>
             <option>11Kg</option>
             <option>12Kg</option>
             <option>13Kg</option>
@@ -41,11 +45,11 @@
 
  <p>Hi Buddy you will order your things here by easy steps.You can also contact us by whats app in this page.
 
- <center>
+
        <label>Pickup Address🡻</label>
   
        <br>
-        <input type="address" name="data[pickup]" placeholder="Pickup Address" required/>
+        <input type="address" name="pickup" placeholder="Pickup Address" required/>
         <br>
         <br>
         <br>
@@ -59,10 +63,10 @@
 
         <div> <label class="cab">Delivery Address🡻</label>
        </div>
-        <input type="address" name="data[deliver]" placeholder="Delivery Address" required/>
+        <input type="address" name="deliver" placeholder="Delivery Address" required/>
 
         <label>Phone Number</label>
-        <input type="Number" name="data[phone]" placeholder="Enter Phone Number" required/>
+        <input type="Number" name="phone" placeholder="Enter Phone Number" required/>
         <br>
         <br>
         <br>
@@ -70,7 +74,7 @@
         <br>
         
         <label>User Name</label>
-        <input type="Name" name="data[User]" required />
+        <input type="Name" name="User" required />
         <br>
         <br>
         <br>
@@ -96,23 +100,7 @@
 
 
 
-    <script>
-            var form = document.getElementById('sheetdb-form');
-        form.addEventListener("submit", e => {
-          e.preventDefault();
-          fetch(form.action, {
-              method : "POST",
-              body: new FormData(document.getElementById("sheetdb-form")),
-          }).then(
-              response => response.json()
-          ).then((html) => {
-            // you can put any JS code here
-            window.open('details.html', '_blank');
 
-          });
-        });
-        </script>
-        
 
 
 
